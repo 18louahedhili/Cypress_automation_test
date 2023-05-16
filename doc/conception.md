@@ -1,4 +1,5 @@
 
+----- Connexion -----
 
 Cas de test 1: Connexion utilisateur ==> Cas passant
 Description : Vérifiez que les utilisateurs peuvent se connecter avec succès sur le site avec des identifiants valides.
@@ -7,8 +8,9 @@ Description : Vérifiez que les utilisateurs peuvent se connecter avec succès s
 Cas de test 2: Connexion utilisateur ==> Cas non passant
 Description : 
 - Vérifiez que les utilisateurs ne peuvent pas se connecter sur le site avec des identifiants invalides.
-- Vérifier l'affichage d'un message d'erreur
+- Vérifier l'affichage d'un message d'erreur: mot de passe ou identifiant invalide
 
+---- Inscription ----
 
 Cas de test 3: Inscription utilisateur "Particulier" Cas passant
 Description : Vérifiez que les utilisateurs peuvent s'inscrire avec succès sur le site.
@@ -17,4 +19,11 @@ Description : Vérifiez que les utilisateurs peuvent s'inscrire avec succès sur
 Cas de test 4: Inscription utilisateur "Particulier" Cas non passant
 Description : Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le site sans remplir tout les champs obligatoires.
 
-
+| TEST ID  | TEST NAME        | TEST DESCRIPTION / GOALS             | TEST TYPE          | PREREQUISITES            | ASSERTIONS                        |
+|----------|---------------   |--------------------------------------|--------------------|--------------------------|-----------------------------------|
+| JIRA-001 | Connect Admin    | Connect with valid credentials admin | Test case Positive |valid credentials admin   |User is redirected to the dashboard|
+| JIRA-002 | User Login       | Login with invalid credentials       | Test case Negative |invalid credentials user  |Display of an error message        |
+| JIRA-003 | User Registration| User Registration - Individual       | Test case Positive |Completed required fields |Successful registration on the site|
+| JIRA-003 | User Registration| User Registration - Individual       | Test case Negative |Missing required fields   |Failed registration                |
+|          |                  |                                      |                    |                          |                           |
+|          |                  |                                      |                    |                          |                           |
