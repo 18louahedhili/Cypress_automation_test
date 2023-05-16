@@ -1,1 +1,2 @@
-tests\node_modules\.bin\cypress open
+cd tests
+node_modules\.bin\cypress open
