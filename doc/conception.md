@@ -25,5 +25,5 @@ Description : Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le si
 | JIRA-002 | User Login       | Login with invalid credentials       | Test case Negative |invalid credentials user  |Display of an error message        |
 | JIRA-003 | User Registration| User Registration - Individual       | Test case Positive |Completed required fields |Successful registration on the site|
 | JIRA-003 | User Registration| User Registration - Individual       | Test case Negative |Missing required fields   |Failed registration                |
-|          |                  |                                      |                    |                          |                           |
-|          |                  |                                      |                    |                          |                           |
+|          |                  |                                      |                    |                          |                                   |
+|          |                  |                                      |                    |                          |                                   |
