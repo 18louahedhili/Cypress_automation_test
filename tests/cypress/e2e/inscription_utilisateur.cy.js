@@ -1,12 +1,18 @@
 describe('User Registration - Individual', () => {
   it('allows users to register successfully on the site', () => {
-    cy.visit('https://opencruise-ok.sogeti-center.cloud/register')
+    cy.visit('https://opencruise-ok.sogeti-center.cloud')
 
-    // Step 1: Click on the "Particulier" button
+    // Step 1: Click on the "Vous n'avez pas de compte ? Créez-en un ici" link
+    cy.get('a[routerlink="/register"]').contains('Vous n\'avez pas de compte ? Créez-en un ici').click()
+
+    // Step 2: Verify that the user is redirected to the registration page
+    cy.url().should('eq', 'https://opencruise-ok.sogeti-center.cloud/register')
+
+    // Step 3: Click on the "Particulier" button
     cy.get('input[name="type"][value="1"]').click()
 
     
-    // Step 2: Fill in the registration form with valid user details
+    // Step 4: Fill in the registration form with valid user details
 
     // Fill in the first name
     cy.get('input[formcontrolname="prenom"]:eq(0)').type('Doe')
@@ -36,16 +42,16 @@ describe('User Registration - Individual', () => {
     cy.get('input[formcontrolname="cin"]:eq(0)').type('0101010101')
 
     // Fill in the username (email)
-    cy.get('input[formcontrolname="username"]:eq(0)').type('pierrelangard@test.com')
+    cy.get('input[formcontrolname="username"]:eq(0)').type('doesarra@test.com')
 
     // Fill in the phone number
     cy.get('input[formcontrolname="tel"]:eq(0)').type('012345678')
 
     // Fill in the password
-    cy.get('input[formcontrolname="password"]:eq(0)').type('Pierre12345')
+    cy.get('input[formcontrolname="password"]:eq(0)').type('Sarra12345')
 
     // Confirm the password
-    cy.get('input[formcontrolname="confirmPassword"]:eq(0)').type('Pierre12345')
+    cy.get('input[formcontrolname="confirmPassword"]:eq(0)').type('Sarra12345')
 
     // Fill in the spouse's last name
     cy.get('input[formcontrolname="nomConjoint"]:eq(0)').type('Langard')
@@ -56,7 +62,7 @@ describe('User Registration - Individual', () => {
     // Fill in the spouse's date of birth
     cy.get('input[formcontrolname="dateNaissanceConjoint"]:eq(0)').type('1984-08-15')
 
-    // Click on the "Créer votre compte" button
+    // Step 5:Click on the "Créer votre compte" button
     cy.get('button.btn.btn-primary').contains('Créer votre compte').click()
 
     })
@@ -64,13 +70,19 @@ describe('User Registration - Individual', () => {
 
 
     it('prevents users from registering without filling in all required fields', () => {
-      cy.visit('https://opencruise-ok.sogeti-center.cloud/register')
+      cy.visit('https://opencruise-ok.sogeti-center.cloud')
 
-      // Step 1: Click on the "Particulier" button
+    // Step 1: Click on the "Vous n'avez pas de compte ? Créez-en un ici" link
+    cy.get('a[routerlink="/register"]').contains('Vous n\'avez pas de compte ? Créez-en un ici').click()
+
+    // Step 2: Verify that the user is redirected to the registration page
+    cy.url().should('eq', 'https://opencruise-ok.sogeti-center.cloud/register')
+
+    // Step 3: Click on the "Particulier" button
     cy.get('input[name="type"][value="1"]').click()
 
     
-    // Step 2: Fill in the registration form with valid user details
+    // Step 4: Fill in the registration form with valid user details
 
     // Fill in the first name
     cy.get('input[formcontrolname="prenom"]:eq(0)').type('Smith')
@@ -114,7 +126,7 @@ describe('User Registration - Individual', () => {
     // Click on the "Créer votre compte" button
     cy.get('button.btn.btn-primary').contains('Créer votre compte').click()
 
-    // Assert that an error message is displayed indicating the missing field
+    // Step 5:Assert that an error message is displayed indicating the missing field
     cy.contains('merci de saisir le téléphone').should('be.visible')
   
   })
