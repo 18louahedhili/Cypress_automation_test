@@ -47,9 +47,9 @@ Cas de test 3: Inscription utilisateur "Particulier" Cas passant
 Description : Vérifiez que les utilisateurs peuvent s'inscrire avec succès sur le site.
 
 // Étapes de test :
-1/ Accéder à la page d'inscription du site: https://opencruise-ok.sogeti-center.cloud
+1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
 2/ Sélectionner l'option de création de compte "Vous n'avez pas de compte ? Créez-en un ici"
-3/ Vérifiez que l'utilisateur est redirigé vers la page d'inscription
+3/ Vérifiez que l'utilisateur est redirigé vers la page d'inscription: https://opencruise-ok.sogeti-center.cloud/register
 4/ Sélectionner l'option "Particulier".
 5/ Remplir tous les champs obligatoires du formulaire d'inscription avec des données valides.
 6/ Cliquer sur le bouton "Créer votre compte".
@@ -63,11 +63,13 @@ Cas de test 4: Inscription utilisateur "Particulier" Cas non passant
 // Description : Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le site sans remplir tout les champs obligatoires.
 
 // Étapes de test :
-1/ Accéder à la page d'inscription du site: https://opencruise-ok.sogeti-center.cloud
-2/ Sélectionner l'option de création de compte pour les particuliers.
-3/ Laisser au moins un champ obligatoire du formulaire d'inscription vide ou incomplet.
-4/ Cliquer sur le bouton "Créer votre compte".
-5/ Vérifier qu'un message d'erreur approprié s'affiche   'merci de saisir le "nom du champ manquant"'
+1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
+2/ Sélectionner l'option de création de compte "Vous n'avez pas de compte ? Créez-en un ici"
+3/ Vérifiez que l'utilisateur est redirigé vers la page d'inscription: https://opencruise-ok.sogeti-center.cloud/register
+4/ Sélectionner l'option de création de compte pour les particuliers.
+5/ Laisser au moins un champ obligatoire du formulaire d'inscription vide ou incomplet.
+6/ Cliquer sur le bouton "Créer votre compte".
+7/ Vérifier qu'un message d'erreur approprié s'affiche   'merci de saisir le "nom du champ manquant"'
 
 // Prérequis :
 Aucun prérequis particulier, sauf s'assurer que tous les champs obligatoires du formulaire d'inscription sont identifiés clairement.
