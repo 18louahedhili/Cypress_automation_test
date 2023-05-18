@@ -1,21 +1,27 @@
-// Fonction de connexion utilisateur
-function userLogin(username, password) {
-  cy.visit('https://opencruise-ok.sogeti-center.cloud');
-  cy.get('input[formcontrolname="username"]').type(username);
-  cy.get('input[formcontrolname="password"]').type(password);
-  cy.get('button.btn.btn-primary').click();
-}
+import ConnexionUtilisateurSteps from '../steps/Connexion_utilisateur_steps.js';
+const connexionUtilisateurSteps = new ConnexionUtilisateurSteps();
 
-// User Login
 describe('User Login', () => {
+
+  beforeEach(() => {
+    cy.visit('https://opencruise-ok.sogeti-center.cloud')
+
+  })
+  // User Login
   it('allows users to log in successfully with valid credentials', () => {
-    userLogin('admin@test.com', 'Sogeti33')
-    cy.get('button#dropdownMenu2').should('contain', 'Bienvenue ADMIN TEST')
-  });
-// User Login Failed
+    connexionUtilisateurSteps.setFormulaire('admin@test.com', 'Sogeti33')
+    connexionUtilisateurSteps.connexion()
+    connexionUtilisateurSteps.checkConnexion()
+
+  })
+  // User Login Failed
   it('prevents users from logging in with invalid credentials', () => {
-    userLogin('loua@test.com', 'Loua18')
-    cy.get('div#toast-container > .ng-trigger.ng-trigger-flyInOut.ngx-toastr.toast-error')
-      .should('contain', 'mot de passe ou identifiant invalide')
+    connexionUtilisateurSteps.setFormulaire('loua@test.com', 'Loua18')
+    connexionUtilisateurSteps.connexion()
+    // Step 5:Assert that an error message is displayed indicating the missing field
+    connexionUtilisateurSteps.checkError('mot de passe ou identifiant invalide')
+
   })
 })
+
+
