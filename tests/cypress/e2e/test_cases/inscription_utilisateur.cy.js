@@ -1,4 +1,4 @@
-import InscriptionUtilisateurSteps from './steps/Inscription_utilisateur_steps.js';
+import InscriptionUtilisateurSteps from '../steps/Inscription_utilisateur_steps.js';
 const inscriptionUtilisateurSteps = new InscriptionUtilisateurSteps();
 
 
