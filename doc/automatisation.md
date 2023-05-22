@@ -1,13 +1,12 @@
 
-L'organisation du code repose sur 
+Pour assurer l'organisation et le bon fonctionnement de l'application, l'architecture du code repose sur :
+
 - Les pages
 - Les étapes (steps) 
 - Les cas de test (test cases)
 
-pour assurer la structure et le bon fonctionnement de l'application. 
 
 ![Diagramme](diagramme.PNG)
-
 
 
 ***Les pages***
@@ -37,7 +36,7 @@ Chaque fonction de cette classe utilise les objets Pages. Elle répresente une �
 
 ===> Ces fonctions n'accédent pas directement aux pages , mais ils instancient les classes Pages qui à leurs tours accédent directment au code HTML/CSS de site.
 
-***Cas de test (test cases)***
+***Les cas de test (test cases)***
 
 Les cas de test regroupent les scénarios à tester, organisés dans des fichiers tels que:
 - connexion_utilisateur.cy.js (3 cas de test)
