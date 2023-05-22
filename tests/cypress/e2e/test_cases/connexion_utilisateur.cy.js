@@ -18,8 +18,16 @@ describe('User Login', () => {
   it('prevents users from logging in with invalid credentials', () => {
     connexionUtilisateurSteps.setFormulaire('loua@test.com', 'Loua18')
     connexionUtilisateurSteps.connexion()
-    // Step 5:Assert that an error message is displayed indicating the missing field
+    //Assert that an error message is displayed to indicate an invalid password or login
     connexionUtilisateurSteps.checkError('mot de passe ou identifiant invalide')
+
+  })
+  // User Login Failed
+  it('prevents users from logging without credentials', () => {
+    connexionUtilisateurSteps.setFormulaire('', '')
+    connexionUtilisateurSteps.connexion()
+    //Assert that an error message is displayed indicating the missing field
+    connexionUtilisateurSteps.checkError('Merci de renseigner votre mot de passe')
 
   })
 })

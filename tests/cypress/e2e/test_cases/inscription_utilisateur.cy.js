@@ -17,7 +17,7 @@ describe('User Registration - Individual', () => {
 
   it('allows users to register successfully on the site', () => {
 
-    // Step 4: Fill in the registration form with valid user details
+    // Fill in the registration form with valid user details
     // Fill in the first name
     inscriptionUtilisateurSteps.setFormulaire('Doe',
       'Sarra',
@@ -60,7 +60,7 @@ describe('User Registration - Individual', () => {
       ''
     )
     inscriptionUtilisateurSteps.valider()
-    // Step 5:Assert that an error message is displayed indicating the missing field
+    //Assert that an error message is displayed indicating the missing field
     inscriptionUtilisateurSteps.checkError('merci de saisir le téléphone')
   })
 
@@ -84,7 +84,7 @@ describe('User Registration - Individual', () => {
       ''
     )
     inscriptionUtilisateurSteps.valider()
-    // Step 5:Assert that an error message is displayed indicating the missing field
+    //Assert that an error message is displayed indicating that the passwords must be identical
     inscriptionUtilisateurSteps.checkError('les mots de passe doivent être identiques')
   })
 
@@ -108,7 +108,7 @@ describe('User Registration - Individual', () => {
       ''
     )
     inscriptionUtilisateurSteps.valider()
-    // Step 5:Assert that an error message is displayed indicating the missing field
+    //Assert that an error message is displayed indicating the missing field
     inscriptionUtilisateurSteps.checkError('merci de saisir votre prénom')
     inscriptionUtilisateurSteps.checkError('merci de saisir votre nom')
     inscriptionUtilisateurSteps.checkError('merci de saisir la date de naissance')
