@@ -3,7 +3,7 @@
 |-------|------------------|--------------------------------------|--------------------|--------------------------|-----------------------------------------|
 | 001   | Connect Admin    | Connect with valid credentials admin | Test case Positive |valid credentials admin   |User is redirected to the dashboard      |
 | 002   | User Login       | Login with invalid credentials       | Test case Negative |invalid credentials user  |Display of an error message              |
-| 003   | User Login       | Login with empty credentials         | Test case Negative |-                         |                                         |
+| 003   | User Login       | Login with empty credentials         | Test case Negative |-                         |Login Failed/error message               |
 | 004   | User Registration| User Registration - Individual       | Test case Positive |Completed required fields |Successful registration on the site      |
 | 005   | User Registration| Missing required fields              | Test case Negative |required fields identified|Failed registration/ Error Message       |
 | 006   | User Registration| Missing password confirmation        | Test case Negative |valid credentials         |Failed registration/Error Message        |
