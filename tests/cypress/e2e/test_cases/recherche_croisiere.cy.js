@@ -34,17 +34,17 @@ describe('Cruise search', () => {
     
 })
   it('allows the user to fill in the search fields', () => {
-
+    //type "Maroc" as a destination
     rechercheCroisiereSteps.MorrocoCruises();
-    
+    //choose a departure date
     rechercheCroisiereSteps.selectDepartureDate();
-    
+    //choose an arrival date
     rechercheCroisiereSteps.selectArrivalDate();
-    
+    //click on "Search" button
     rechercheCroisiereSteps.searchClick();
-
+    //click on "learn more" button
     rechercheCroisiereSteps.readMoreCruiseMaroc();
-
+    //return to the home page
     rechercheCroisiereSteps.checkReturn();
 
 })

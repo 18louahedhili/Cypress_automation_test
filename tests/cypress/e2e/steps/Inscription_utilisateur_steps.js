@@ -1,10 +1,12 @@
 import InscriptionPage from '../pages/InscriptionPage';
 
-const inscriptionPage = new InscriptionPage();
 
 class InscriptionUtilisateurSteps {
 
-
+    inscriptionPage
+    constructor(link) {
+        this.inscriptionPage = new InscriptionPage(link);
+    }
     setFormulaire(prenom,
         nom,
         date_naissance,
@@ -19,94 +21,113 @@ class InscriptionUtilisateurSteps {
         password,
         passwordConfirm,
         nom_conjoint,
-        prenom_conjiont,
-        date_naissance_conjiont
+        prenom_conjoint,
+        date_naissance_conjoint,
+        raisonSociale,
+        siret,
+        nombreSalarie
     ) {
         if (prenom) {
-            inscriptionPage.getPrenom().type(prenom)
+            this.inscriptionPage.getPrenom().type(prenom)
         }
 
         // Fill in the last name
         if (nom) {
-            inscriptionPage.getNom().type(nom)
+            this.inscriptionPage.getNom().type(nom)
         }
         // Fill in the date of birth
         if (date_naissance) {
-            inscriptionPage.getDateNaissance().type(date_naissance)
+            this.inscriptionPage.getDateNaissance().type(date_naissance)
         }
         // Fill in the address
         if (address) {
-            inscriptionPage.getAdress().type(address)
+            this.inscriptionPage.getAdress().type(address)
         }
         // Select the country
         if (country) {
-            inscriptionPage.getCurrentPays().select(country)
+            this.inscriptionPage.getCurrentPays().select(country)
         }
         // Select the city
         if (city) {
-            inscriptionPage.getVille().select(city)
+            this.inscriptionPage.getVille().select(city)
         }
         // Fill in the postal code
         if (code_postal) {
-            inscriptionPage.getCodePostal().type(code_postal)
+            this.inscriptionPage.getCodePostal().type(code_postal)
         }
         // Fill in the passport number
         if (passport_number) {
-            inscriptionPage.getPasseport().type(passport_number)
+            this.inscriptionPage.getPasseport().type(passport_number)
         }
         // Fill in the CIN number
         if (cin) {
-            inscriptionPage.getCin().type(cin)
+            this.inscriptionPage.getCin().type(cin)
         }
         // Fill in the username (email)
         if (username) {
-            inscriptionPage.getUsername().type(username)
+            this.inscriptionPage.getUsername().type(username)
         }
         // Fill in the phone number
         if (tel) {
-            inscriptionPage.getTel().type(tel)
+            this.inscriptionPage.getTel().type(tel)
         }
         // Fill in the password
         if (password) {
-            inscriptionPage.getPassword().type(password)
+            this.inscriptionPage.getPassword().type(password)
         }
         // Confirm the password
         if (passwordConfirm) {
-            inscriptionPage.getConfirmPassword().type(passwordConfirm)
+            this.inscriptionPage.getConfirmPassword().type(passwordConfirm)
         }
         // Fill in the spouse's last name
         if (nom_conjoint) {
-            inscriptionPage.getnomConjoint().type(nom_conjoint)
+            this.inscriptionPage.getnomConjoint().type(nom_conjoint)
         }
         // Fill in the spouse's first name
-        if (prenom_conjiont) {
-            inscriptionPage.getPrenomConjoint().type(prenom_conjiont)
+        if (prenom_conjoint) {
+            this.inscriptionPage.getPrenomConjoint().type(prenom_conjoint)
         }
         // Fill in the spouse's date of birth
-        if (date_naissance_conjiont) {
-            inscriptionPage.getDateNaissanceConjoint().type(date_naissance_conjiont)
+        if (date_naissance_conjoint) {
+            this.inscriptionPage.getDateNaissanceConjoint().type(date_naissance_conjoint)
         }
+        
+        if (raisonSociale) {
+            this.inscriptionPage.getRaisonSocial().select('SNC')
+        }
+        if (siret) {
+            this.inscriptionPage.getSiret().type('1234567890000')
+        }
+        if (nombreSalarie) {
+            this.inscriptionPage.getNombreSalarie().select('21-50')
+        }
+    
     }
     valider() {
-        // Step 5:Click on the "Créer votre compte" button
-        inscriptionPage.getButton().click()
+        //Click on the "Créer votre compte" button
+        this.inscriptionPage.getButton().click()
     }
     checkError(message) {
-        inscriptionPage.getError(message).should('be.visible')
+        this.inscriptionPage.getError(message).should('be.visible')
     }
     createAccount() {
-        // Step 1: Click on the "Vous n'avez pas de compte ? Créez-en un ici" link
-        inscriptionPage.getAccountLabel().click()
+        //Click on the "Vous n'avez pas de compte ? Créez-en un ici" link
+        this.inscriptionPage.getAccountLabel().click()
     }
-
     checkRegisterPage() {
-        // Step 2: Verify that the user is redirected to the registration page
-        inscriptionPage.checkRegister()
+        //Verify that the user is redirected to the registration page
+        this.inscriptionPage.checkRegister()
     }
-
     validateParticularAccount() {
-        // Step 3: Click on the "Particulier" button
-        inscriptionPage.getParticularAccount().click()
+        //Click on the "Particulier" button
+        this.inscriptionPage.getParticularAccount().click()
+    }
+    validateProfessionnelAccount() {
+        //Click on the "Professionnel" button
+        this.inscriptionPage.getProfessionnelAccount().click()
+    }
+    check_Popup(){
+        this.inscriptionPage.checkPopup()
     }
 }
 

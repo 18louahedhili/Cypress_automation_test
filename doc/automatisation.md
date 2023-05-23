@@ -40,6 +40,7 @@ Chaque fonction de cette classe utilise les objets Pages. Elle répresente une �
 
 Les cas de test regroupent les scénarios à tester, organisés dans des fichiers tels que:
 - connexion_utilisateur.cy.js (3 cas de test)
+- inscription_utilisateur_ko.cy.js (1 cas de test: Bug)
 - inscription_utilisateur.cy.js (4 cas de test)
 - recherche_croisiere.cy.js (3 cas de test)
 
@@ -65,6 +66,10 @@ De plus, dans le code il y'a l'export par défaut avec la syntaxe export default
 
 ***Lancer cypress***
 Pour lancer Cypress, un fichier "runcy.bat" est créé. En lançant la commande correspondante, Cypress est automatiquement démarré.
+
+
+***Générer rapports***
+Pour génerer les rapports, un fichier "genreports.bat" est créé. En lançant la commande correspondante, le rapport est automatiquement géneré dans le fichier execution.md .
 
 
 

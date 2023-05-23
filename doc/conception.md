@@ -11,6 +11,7 @@
 | 008   | search cruise    | select cruise/download program       | Test case Positive |valid user account        |cruise selected and program downloaded   |
 | 009   | search cruise    | select cruise/return to home page    | Test case Positive |valid user account        |select cruise and return to homepage     |
 | 010   | search cruise    | Search cruises by specific criteria  | Test case Positive |valid user account        |research conducted/return to homepage    |
+| 011   | User Registration| 'User Registration - Professional'   | Bug                |Completed required fields |bug: technical error/Failed registration |
 
 ************** Connexion **************
 

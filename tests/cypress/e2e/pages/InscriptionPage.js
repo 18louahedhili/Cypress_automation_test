@@ -1,6 +1,9 @@
 
 class InscriptionPage {
-
+    link = ""
+    constructor(link) {
+        this.link = link;
+    }
     getPrenom() {
         return cy.get('input[formcontrolname="nom"]:eq(0)')
     }
@@ -58,13 +61,28 @@ class InscriptionPage {
     getParticularAccount() {
         return cy.get('input[name="type"][value="1"]')
     }
-    checkRegister(){
-        cy.url().should('eq', 'https://opencruise-ok.sogeti-center.cloud/register')
+    getProfessionnelAccount(){
+        return cy.get('input[name="type"][value="0"]')
     }
-
+    checkRegister(){
+        cy.url().should('eq', this.link)
+    }
     getAccountLabel(){
         return cy.get('a[routerlink="/register"]').contains('Vous n\'avez pas de compte ? Créez-en un ici')
     }
+    getRaisonSocial() {
+        return cy.get('select[formcontrolname="raisonSociale"]:eq(0)')
+    }
+    getSiret() {
+        return cy.get('input[formcontrolname="siret"]:eq(0)')
+    }
+    getNombreSalarie() {
+        return cy.get('select[formcontrolname="nombreSalarie"]:eq(0)')
+    }
+    checkPopup() {
+        return  cy.get('div#toast-container.toast-top-right.toast-container').should('be.visible')
+    }
+
 }
 require('@cypress/xpath')
 export default InscriptionPage;

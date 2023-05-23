@@ -55,8 +55,9 @@ class RechercheCroisiereSteps {
         recherchePage.getSearchClick().click();
     }
     readMoreCruiseMaroc() {
-        recherchePage.getReadMoreMaroc().click();
+        recherchePage.getReadMoreMaroc().click({ multiple: false });
     }
+
 
 
 }

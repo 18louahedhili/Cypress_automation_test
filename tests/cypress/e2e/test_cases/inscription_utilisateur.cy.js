@@ -1,5 +1,5 @@
 import InscriptionUtilisateurSteps from '../steps/Inscription_utilisateur_steps.js';
-const inscriptionUtilisateurSteps = new InscriptionUtilisateurSteps();
+const inscriptionUtilisateurStepsOk = new InscriptionUtilisateurSteps('https://opencruise-ok.sogeti-center.cloud/register');
 
 
 describe('User Registration - Individual', () => {
@@ -7,19 +7,18 @@ describe('User Registration - Individual', () => {
   beforeEach(() => {
     cy.visit('https://opencruise-ok.sogeti-center.cloud')
 
-    inscriptionUtilisateurSteps.createAccount()
+    inscriptionUtilisateurStepsOk.createAccount()
 
-    inscriptionUtilisateurSteps.checkRegisterPage()
+    inscriptionUtilisateurStepsOk.checkRegisterPage()
 
-    inscriptionUtilisateurSteps.validateParticularAccount()
+    inscriptionUtilisateurStepsOk.validateParticularAccount()
 
   })
 
   it('allows users to register successfully on the site', () => {
 
     // Fill in the registration form with valid user details
-    // Fill in the first name
-    inscriptionUtilisateurSteps.setFormulaire('Doe',
+    inscriptionUtilisateurStepsOk.setFormulaire('Doe',
       'Sarra',
       '1990-05-22',
       'France',
@@ -36,13 +35,13 @@ describe('User Registration - Individual', () => {
       'Pierre',
       '1984-08-15'
     )
-    inscriptionUtilisateurSteps.valider()
+    inscriptionUtilisateurStepsOk.valider()
 
   })
 
   it('prevents users from registering without filling in all required fields', () => {
 
-    inscriptionUtilisateurSteps.setFormulaire('Smith',
+    inscriptionUtilisateurStepsOk.setFormulaire('Smith',
       'Olivier',
       '1990-05-22',
       'France',
@@ -59,14 +58,14 @@ describe('User Registration - Individual', () => {
       '',
       ''
     )
-    inscriptionUtilisateurSteps.valider()
+    inscriptionUtilisateurStepsOk.valider()
     //Assert that an error message is displayed indicating the missing field
-    inscriptionUtilisateurSteps.checkError('merci de saisir le téléphone')
+    inscriptionUtilisateurStepsOk.checkError('merci de saisir le téléphone')
   })
 
   it('prevents users from registering without confirmation his password', () => {
 
-    inscriptionUtilisateurSteps.setFormulaire('Smith',
+    inscriptionUtilisateurStepsOk.setFormulaire('Smith',
       'Olivier',
       '1990-05-22',
       'France',
@@ -83,14 +82,14 @@ describe('User Registration - Individual', () => {
       '',
       ''
     )
-    inscriptionUtilisateurSteps.valider()
+    inscriptionUtilisateurStepsOk.valider()
     //Assert that an error message is displayed indicating that the passwords must be identical
-    inscriptionUtilisateurSteps.checkError('les mots de passe doivent être identiques')
+    inscriptionUtilisateurStepsOk.checkError('les mots de passe doivent être identiques')
   })
 
   it('prevents users from registering without typing informations', () => {
 
-    inscriptionUtilisateurSteps.setFormulaire('',
+    inscriptionUtilisateurStepsOk.setFormulaire('',
       '',
       '',
       '',
@@ -107,17 +106,19 @@ describe('User Registration - Individual', () => {
       '',
       ''
     )
-    inscriptionUtilisateurSteps.valider()
+    inscriptionUtilisateurStepsOk.valider()
     //Assert that an error message is displayed indicating the missing field
-    inscriptionUtilisateurSteps.checkError('merci de saisir votre prénom')
-    inscriptionUtilisateurSteps.checkError('merci de saisir votre nom')
-    inscriptionUtilisateurSteps.checkError('merci de saisir la date de naissance')
-    inscriptionUtilisateurSteps.checkError('merci de saisir votre adresse')
-    inscriptionUtilisateurSteps.checkError('merci de saisir le Pays')
-    inscriptionUtilisateurSteps.checkError('merci de saisir la ville')
-    inscriptionUtilisateurSteps.checkError('merci de saisir le code postal')
-    inscriptionUtilisateurSteps.checkError('merci de saisir le numéro de passeport')
-    inscriptionUtilisateurSteps.checkError('merci de saisir le Numéro de carte d’identité')
+    inscriptionUtilisateurStepsOk.checkError('merci de saisir votre prénom')
+    inscriptionUtilisateurStepsOk.checkError('merci de saisir votre nom')
+    inscriptionUtilisateurStepsOk.checkError('merci de saisir la date de naissance')
+    inscriptionUtilisateurStepsOk.checkError('merci de saisir votre adresse')
+    inscriptionUtilisateurStepsOk.checkError('merci de saisir le Pays')
+    inscriptionUtilisateurStepsOk.checkError('merci de saisir la ville')
+    inscriptionUtilisateurStepsOk.checkError('merci de saisir le code postal')
+    inscriptionUtilisateurStepsOk.checkError('merci de saisir le numéro de passeport')
+    inscriptionUtilisateurStepsOk.checkError('merci de saisir le Numéro de carte d’identité')
   })
 
 })
+
+
