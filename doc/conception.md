@@ -16,22 +16,23 @@
 ************** Connexion **************
 
 Cas de test 1: Connexion utilisateur ==> Cas passant
-// Description : Vérifiez que les utilisateurs peuvent se connecter avec succès sur le site avec des identifiants valides.
+// Description : 
+- Vérifiez que les utilisateurs peuvent se connecter avec succès sur le site avec des identifiants valides.
 
 // Étapes de test :
-1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud/login
-2/ Saisir les identifiants valides dans les champs appropriés (nom d'utilisateur: admine@test.com et mot de passe:Sogeti33):
-3/ Cliquer sur le bouton de connexion.
-4/ Vérifier que l'URL de la page redirige vers le tableau de bord (dashboard).
-5/ Vérifier que le message de bienvenue affiche le nom d'utilisateur connecté "Bienvenu ADMIN TEST".
+- Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud/login
+- Saisir les identifiants valides dans les champs appropriés (nom d'utilisateur: admine@test.com et mot de passe:Sogeti33):
+- Cliquer sur le bouton de connexion.
+- Vérifier que l'URL de la page redirige vers le tableau de bord (dashboard).
+- Vérifier que le message de bienvenue affiche le nom d'utilisateur connecté "Bienvenu ADMIN TEST".
 
 // Prérequis :
 - Avoir un compte utilisateur enregistré sur le site.
 - Identifiants valides pour la connexion.
   
 // Objectifs attendus :
-L'utilisateur est redirigé vers le tableau de bord après la connexion.
-Le message de bienvenue affiche le nom d'utilisateur connecté "Bienvenu ADMIN TEST"
+- L'utilisateur est redirigé vers le tableau de bord après la connexion.
+- Le message de bienvenue affiche le nom d'utilisateur connecté "Bienvenu ADMIN TEST"
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 Cas de test 2: Connexion utilisateur ==> Cas non passant
@@ -40,11 +41,11 @@ Description :
 - Vérifier l'affichage d'un message d'erreur: mot de passe ou identifiant invalide
 
 // Étapes de test :
-1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud/login
-2/ Saisir des identifiants invalides dans les champs appropriés (nom d'utilisateur et mot de passe).
-3/ Cliquer sur le bouton de connexion.
-4/ Vérifier que l'URL de la page reste sur la page de connexion.
-5/ Vérifier que le message d'erreur "mot de passe ou identifiant invalide" est affiché.
+- Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud/login
+- Saisir des identifiants invalides dans les champs appropriés (nom d'utilisateur et mot de passe).
+- Cliquer sur le bouton de connexion.
+- Vérifier que l'URL de la page reste sur la page de connexion.
+- Vérifier que le message d'erreur "mot de passe ou identifiant invalide" est affiché.
 
 // Prérequis :
 - Avoir un compte utilisateur enregistré sur le site.
@@ -57,55 +58,59 @@ Description :
 Cas de test 3: Connexion utilisateur - Cas non passant
 
 //Description:
-Vérifiez que les utilisateurs ne peuvent pas se connecter avec succès sur le site sans avoir entré les identifiants.
+- Vérifiez que les utilisateurs ne peuvent pas se connecter avec succès sur le site sans avoir entré les identifiants.
 
 // Étapes de test :
-1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud/login
-2/ Saisir des identifiants invalides dans les champs appropriés (nom d'utilisateur et mot de passe).
-3/ Cliquer sur le bouton de connexion.
-4/ Vérifier que l'URL de la page reste sur la page de connexion.
-5/ Vérifier que les messages d'erreur "Merci de renseigner votre identifiant/Merci de renseigner votre mot de passe" sont affichés.
+- Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud/login
+- Saisir des identifiants invalides dans les champs appropriés (nom d'utilisateur et mot de passe).
+- Cliquer sur le bouton de connexion.
+- Vérifier que l'URL de la page reste sur la page de connexion.
+- Vérifier que les messages d'erreur "Merci de renseigner votre identifiant/Merci de renseigner votre mot de passe" sont affichés.
 
 // Prérequis:
 - Avoir accès à l'internet.
 - Avoir un compte utilisateur existant sur le site.
   
 // Résultats attendus:
-Lorsque les identifiants ne sont pas entrés et que le bouton de connexion est cliqué, un message d'erreur approprié doit être affiché.
-L'utilisateur doit rester sur la page de connexion sans être connecté.
+- Lorsque les identifiants ne sont pas entrés et que le bouton de connexion est cliqué, un message d'erreur approprié doit être affiché.
+- L'utilisateur doit rester sur la page de connexion sans être connecté.
 -------------------------------------------------------------------------------------------------------------------------------------------
 ************** Inscription **************
 
 Cas de test 4: Inscription utilisateur "Particulier" Cas passant
-Description : Vérifiez que les utilisateurs peuvent s'inscrire avec succès sur le site.
+Description : 
+- Vérifiez que les utilisateurs peuvent s'inscrire avec succès sur le site.
 
 // Étapes de test :
-1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
-2/ Sélectionner l'option de création de compte "Vous n'avez pas de compte ? Créez-en un ici"
-3/ Vérifiez que l'utilisateur est redirigé vers la page d'inscription: https://opencruise-ok.sogeti-center.cloud/register
-4/ Sélectionner l'option "Particulier".
-5/ Remplir tous les champs obligatoires du formulaire d'inscription avec des données valides.
-6/ Cliquer sur le bouton "Créer votre compte".
+- Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
+- Sélectionner l'option de création de compte "Vous n'avez pas de compte ? Créez-en un ici"
+- Vérifiez que l'utilisateur est redirigé vers la page d'inscription: https://opencruise-ok.sogeti-center.cloud/register
+- Sélectionner l'option "Particulier".
+- Remplir tous les champs obligatoires du formulaire d'inscription avec des données valides.
+- Cliquer sur le bouton "Créer votre compte".
 
-// Prérequis :Aucun prérequis 
+// Prérequis :
+- Aucun prérequis 
+
 // Résultats attendus: :
 - L'utilisateur est en mesure de remplir avec succès le formulaire d'inscription en tant que "Particulier".
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 Cas de test 5: Inscription utilisateur "Particulier" Cas non passant
-// Description : Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le site sans remplir tout les champs obligatoires.
+// Description : 
+- Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le site sans remplir tout les champs obligatoires.
 
 // Étapes de test :
-1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
-2/ Sélectionner l'option de création de compte "Vous n'avez pas de compte ? Créez-en un ici"
-3/ Vérifiez que l'utilisateur est redirigé vers la page d'inscription: https://opencruise-ok.sogeti-center.cloud/register
-4/ Sélectionner l'option de création de compte pour les particuliers.
-5/ Laisser au moins un champ obligatoire du formulaire d'inscription vide ou incomplet.
-6/ Cliquer sur le bouton "Créer votre compte".
-7/ Vérifier qu'un message d'erreur approprié s'affiche   'merci de saisir le "nom du champ manquant"'
+- Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
+- Sélectionner l'option de création de compte "Vous n'avez pas de compte ? Créez-en un ici"
+- Vérifiez que l'utilisateur est redirigé vers la page d'inscription: https://opencruise-ok.sogeti-center.cloud/register
+- Sélectionner l'option de création de compte pour les particuliers.
+- Laisser au moins un champ obligatoire du formulaire d'inscription vide ou incomplet.
+- Cliquer sur le bouton "Créer votre compte".
+- Vérifier qu'un message d'erreur approprié s'affiche   'merci de saisir le "nom du champ manquant"'
 
 // Prérequis :
-Aucun prérequis particulier, sauf s'assurer que tous les champs obligatoires du formulaire d'inscription sont identifiés clairement.
+- Aucun prérequis particulier, sauf s'assurer que tous les champs obligatoires du formulaire d'inscription sont identifiés clairement.
 
 // Résultats attendus: :
 - Le système doit empêcher l'utilisateur de soumettre le formulaire d'inscription s'il y a des champs obligatoires vides ou incomplets.
@@ -115,18 +120,18 @@ Aucun prérequis particulier, sauf s'assurer que tous les champs obligatoires du
 Cas de test 6: Inscription utilisateur "Particulier" - Cas non passant
 
 // Description:
-Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le site sans confirmer leur mot de passe.
+- Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le site sans confirmer leur mot de passe.
 
 // Étapes de test:
 
-1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
-2/ Sélectionner l'option de création de compte "Vous n'avez pas de compte ? Créez-en un ici"
-3/ Vérifier que la page d'inscription est chargée avec succès: https://opencruise-ok.sogeti-center.cloud/register.
-4/ Sélectionner l'option de création de compte pour les particuliers.
-5/ Remplir tous les champs obligatoires du formulaire d'inscription
-6/ Ne pas saisir la même valeur dans le champ de confirmation du mot de passe que celle saisie dans le champ du mot de passe.
-7/ Cliquer sur le bouton "Créer votre compte".
-8/ Vérifier si un message d'erreur approprié est affiché indiquant que les mots de passe ne correspondent pas"'les mots de passe doivent être identiques'".
+- Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
+- Sélectionner l'option de création de compte "Vous n'avez pas de compte ? Créez-en un ici"
+- Vérifier que la page d'inscription est chargée avec succès: https://opencruise-ok.sogeti-center.cloud/register.
+- Sélectionner l'option de création de compte pour les particuliers.
+- Remplir tous les champs obligatoires du formulaire d'inscription
+- Ne pas saisir la même valeur dans le champ de confirmation du mot de passe que celle saisie dans le champ du mot de passe.
+- Cliquer sur le bouton "Créer votre compte".
+- Vérifier si un message d'erreur approprié est affiché indiquant que les mots de passe ne correspondent pas"'les mots de passe doivent être identiques'".
 
 // Prérequis:
 - Avoir accès à l'internet.
@@ -139,15 +144,15 @@ Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le site sans confir
 Cas de test 7: Inscription utilisateur "Particulier" - Cas non passant
 
 // Description:
-Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le site sans renseigner aucune donnée dans le formulaire d'inscription.
+- Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le site sans renseigner aucune donnée dans le formulaire d'inscription.
 
 // Étapes de test:
-1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
-2/ Sélectionner l'option de création de compte "Vous n'avez pas de compte ? Créez-en un ici"
-3/ Vérifier que la page d'inscription est chargée avec succès: https://opencruise-ok.sogeti-center.cloud/register.
-4/ Sélectionner l'option de création de compte pour les particuliers.
-5/ Cliquer sur le bouton d'inscription sans renseigner aucune donnée dans les champs du formulaire d'inscription.
-6/ Vérifier si des messages d'erreur appropriés sont affichés pour indiquer que les champs obligatoires sont requis.
+- Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
+- Sélectionner l'option de création de compte "Vous n'avez pas de compte ? Créez-en un ici"
+- Vérifier que la page d'inscription est chargée avec succès: https://opencruise-ok.sogeti-center.cloud/register.
+- Sélectionner l'option de création de compte pour les particuliers.
+- Cliquer sur le bouton d'inscription sans renseigner aucune donnée dans les champs du formulaire d'inscription.
+- Vérifier si des messages d'erreur appropriés sont affichés pour indiquer que les champs obligatoires sont requis.
 
 // Prérequis:
 Avoir accès à l'internet.
@@ -163,18 +168,18 @@ Avoir accès à l'internet.
 Cas de test 8: Recherche Croisiere - Cas passant
 
 // Description:
-Vérifiez que l'utilisateur est capable de voir les croisières disponibles et de télécharger le programme.
+- Vérifiez que l'utilisateur est capable de voir les croisières disponibles et de télécharger le programme.
 
 // Étapes de test:
-1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
-2/ Saisir les identifiants valides dans les champs appropriés (nom d'utilisateur: admine@test.com et mot de passe:Sogeti33):
-3/ Cliquer sur le bouton de connexion.
-4/ Vérifier que l'URL de la page redirige vers le tableau de bord (dashboard).
-5/ Selectionner des croisières par continent.
-6/ Vérifier que les croisières sont affichées avec les informations pertinentes.
-7/ Sélectionner une croisière spécifique pour en savoir plus.
-8/ Cliquer sur le bouton de téléchargement du programme de la croisière.
-9/ Vérifier que le programme de la croisière est téléchargé avec succès.
+- Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
+- Saisir les identifiants valides dans les champs appropriés (nom d'utilisateur: admine@test.com et mot de passe:Sogeti33):
+- Cliquer sur le bouton de connexion.
+- Vérifier que l'URL de la page redirige vers le tableau de bord (dashboard).
+- Selectionner des croisières par continent.
+- Vérifier que les croisières sont affichées avec les informations pertinentes.
+- Sélectionner une croisière spécifique pour en savoir plus.
+- Cliquer sur le bouton de téléchargement du programme de la croisière.
+- Vérifier que le programme de la croisière est téléchargé avec succès.
 
 // Prérequis:
 - Avoir accès à l'internet.
@@ -188,18 +193,18 @@ Résultats attendus:
 Cas de test 9: Recherche Croisiere - Cas passant
 
 // Description:
-Vérifiez que l'utilisateur peut consulter les détails de la croisière sélectionnée et revenir à la page d'accueil.
+- Vérifiez que l'utilisateur peut consulter les détails de la croisière sélectionnée et revenir à la page d'accueil.
 
 // Étapes de test:
-1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
-2/ Saisir les identifiants valides dans les champs appropriés (nom d'utilisateur: admine@test.com et mot de passe:Sogeti33):
-3/ Cliquer sur le bouton de connexion.
-4/ Vérifier que l'URL de la page redirige vers le tableau de bord (dashboard).
-5/ Selectionner des croisières par continent.
-6/ Vérifier que les croisières sont affichées avec les informations pertinentes.
-7/ Sélectionner une croisière spécifique pour en savoir plus.
-8/ Cliquer sur le bouton "Retour à la page d'accueil".
-9/ Vérifier que l'URL de la page redirige vers la page d'accueil du site.
+- Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud.
+- Saisir les identifiants valides dans les champs appropriés (nom d'utilisateur: admine@test.com et mot de passe:Sogeti33):.
+- Cliquer sur le bouton de connexion.
+- Vérifier que l'URL de la page redirige vers le tableau de bord (dashboard).
+- Selectionner des croisières par continent.
+- Vérifier que les croisières sont affichées avec les informations pertinentes.
+- Sélectionner une croisière spécifique pour en savoir plus.
+- Cliquer sur le bouton "Retour à la page d'accueil".
+- Vérifier que l'URL de la page redirige vers la page d'accueil du site.
 
 // Prérequis:
 - Avoir accès à l'internet.
@@ -215,18 +220,18 @@ Vérifiez que l'utilisateur peut consulter les détails de la croisière sélect
 Cas de test 10: Recherche Croisiere - Cas passant
 
 // Description:
-Vérifiez que l'utilisateur est capable de voir les croisières disponibles et de revenir à la page d'accueil.
+- Vérifiez que l'utilisateur est capable de voir les croisières disponibles et de revenir à la page d'accueil.
 
 // Étapes de test:
-1/ Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
-2/ Saisir les identifiants valides dans les champs appropriés (nom d'utilisateur: admine@test.com et mot de passe:Sogeti33):
-3/ Cliquer sur le bouton de connexion.
-4/ Vérifier que l'URL de la page redirige vers le tableau de bord (dashboard).
-5/ Rechercher des croisières par destination/date d'arrivé et de retour/durée.
-6/ Vérifier que les croisières sont affichées avec les informations pertinentes.
-7/ Sélectionner une croisière spécifique pour en savoir plus.
-8/ Cliquer sur le bouton "Retour à la page d'accueil".
-9/ Vérifier que l'URL de la page redirige vers la page d'accueil du site.
+- Accéder à la page de connexion du site: https://opencruise-ok.sogeti-center.cloud
+- Saisir les identifiants valides dans les champs appropriés (nom d'utilisateur: admine@test.com et mot de passe:Sogeti33):
+- Cliquer sur le bouton de connexion.
+- Vérifier que l'URL de la page redirige vers le tableau de bord (dashboard).
+- Rechercher des croisières par destination/date d'arrivé et de retour/durée.
+- Vérifier que les croisières sont affichées avec les informations pertinentes.
+- Sélectionner une croisière spécifique pour en savoir plus.
+- Cliquer sur le bouton "Retour à la page d'accueil".
+- Vérifier que l'URL de la page redirige vers la page d'accueil du site.
 
 // Prérequis:
 - Avoir accès à l'internet.
