@@ -49,6 +49,7 @@
   -  Finished processing: 2 seconds                                                  
 
   -  Video output: C:\Users\Lily\Desktop\Testing\TESTFACTORY\workspace\cypress\cypress\projet_tutore_web_loua_hedhili\tests\cypress\videos\connexion_utilisateur.cy.js.mp4
+  ![execution_connexion](..\tests\cypress\videos\connexion_utilisateur.cy.js.mp4)
 
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -87,6 +88,7 @@
   -  Finished processing: 8 seconds                                                  
 
   -  Video output: C:\Users\Lily\Desktop\Testing\TESTFACTORY\workspace\cypress\cypress\projet_tutore_web_loua_hedhili\tests\cypress\videos\inscription_utilisateur.cy.js.mp4
+  ![execution_inscription](..\tests\cypress\videos\inscription_utilisateur_ko.cy.js.mp4)
 
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -122,7 +124,7 @@
   -  Finished processing: 5 seconds                                                  
 
   -  Video output: C:\Users\Lily\Desktop\Testing\TESTFACTORY\workspace\cypress\cypress\projet_tutore_web_loua_hedhili\tests\cypress\videos\inscription_utilisateur_ko.cy.js.mp4
-
+  ![execution_inscription_ko](..\tests\cypress\videos\inscription_utilisateur.cy.js.mp4)
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
                                                                                                     
@@ -159,7 +161,7 @@
   -  Finished processing: 9 seconds                                                  
 
   -  Video output: C:\Users\Lily\Desktop\Testing\TESTFACTORY\workspace\cypress\cypress\projet_tutore_web_loua_hedhili\tests\cypress\videos\recherche_croisiere.cy.js.mp4
-
+  ![execution_recherche](..\tests\cypress\videos\recherche_croisiere.cy.js.mp4)
 
 ====================================================================================================
 
@@ -178,7 +180,7 @@
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
     √  All specs passed!                        01:15       11       11        -        -        -  
 
-![execution_connexion](connexion_utilisateur.cy.js.mp4)
-![execution_inscription_ko](inscription_utilisateur_ko.cy.js.mp4)
-![execution_inscription](inscription_utilisateur.cy.js.mp4)
-![execution_recherche](recherche_croisiere.cy.js.mp4)
+![execution_connexion](..\tests\cypress\videos\connexion_utilisateur.cy.js.mp4)
+![execution_inscription_ko](..\tests\cypress\videos\inscription_utilisateur_ko.cy.js.mp4)
+![execution_inscription](..\tests\cypress\videos\inscription_utilisateur.cy.js.mp4)
+![execution_recherche](..\tests\cypress\videos\recherche_croisiere.cy.js.mp4)
