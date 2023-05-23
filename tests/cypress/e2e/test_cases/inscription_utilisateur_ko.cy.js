@@ -27,7 +27,7 @@ describe('User Registration - Professional', () => {
       '75002',
       '012345678',
       '0101010101',
-      'Mariesmith@test.com',
+      'Mariesmith1@test.com',
       '012345678',
       'Mariesmith12345',
       'Mariesmith12345',
