@@ -88,7 +88,7 @@ Description : Vérifiez que les utilisateurs peuvent s'inscrire avec succès sur
 6/ Cliquer sur le bouton "Créer votre compte".
 
 // Prérequis :Aucun prérequis 
-// Objectifs attendus :
+// Résultats attendus: :
 - L'utilisateur est en mesure de remplir avec succès le formulaire d'inscription en tant que "Particulier".
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -107,7 +107,7 @@ Cas de test 5: Inscription utilisateur "Particulier" Cas non passant
 // Prérequis :
 Aucun prérequis particulier, sauf s'assurer que tous les champs obligatoires du formulaire d'inscription sont identifiés clairement.
 
-// Objectifs attendus :
+// Résultats attendus: :
 - Le système doit empêcher l'utilisateur de soumettre le formulaire d'inscription s'il y a des champs obligatoires vides ou incomplets.
 - Un message d'erreur approprié doit être affiché pour indiquer à l'utilisateur de remplir tous les champs obligatoires.
 
@@ -130,7 +130,7 @@ Vérifiez que les utilisateurs ne peuvent pas s'inscrire sur le site sans confir
 
 // Prérequis:
 - Avoir accès à l'internet.
-- 
+  
 // Résultats attendus:
 - Lorsque la confirmation du mot de passe n'est pas saisie ou que les mots de passe ne correspondent pas, un message d'erreur approprié doit être affiché.
 - L'utilisateur ne doit pas être inscrit avec succès sur le site.
@@ -179,7 +179,7 @@ Vérifiez que l'utilisateur est capable de voir les croisières disponibles et d
 // Prérequis:
 - Avoir accès à l'internet.
 - Disposer d'un compte utilisateur valide pour se connecter.
-- 
+
 Résultats attendus:
 - Après s'être connecté avec succès, l'utilisateur doit être redirigé vers le tableau de bord où les croisières disponibles sont affichées.
 - L'utilisateur doit être en mesure de voir les croisières disponibles avec les informations pertinentes.
