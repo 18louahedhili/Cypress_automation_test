@@ -178,3 +178,7 @@
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
     √  All specs passed!                        01:15       11       11        -        -        -  
 
+![execution_connexion](connexion_utilisateur.cy.js.mp4)
+![execution_inscription_ko](inscription_utilisateur_ko.cy.js.mp4)
+![execution_inscription](inscription_utilisateur.cy.js.mp4)
+![execution_recherche](recherche_croisiere.cy.js.mp4)
