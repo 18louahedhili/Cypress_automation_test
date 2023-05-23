@@ -180,7 +180,7 @@
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
     √  All specs passed!                        01:15       11       11        -        -        -  
 
-![execution_connexion](..\tests\cypress\videos\connexion_utilisateur.cy.js.mp4)
-![execution_inscription_ko](..\tests\cypress\videos\inscription_utilisateur_ko.cy.js.mp4)
-![execution_inscription](..\tests\cypress\videos\inscription_utilisateur.cy.js.mp4)
-![execution_recherche](..\tests\cypress\videos\recherche_croisiere.cy.js.mp4)
+![execution_connexion](../tests/cypress/videos/connexion_utilisateur.cy.js.mp4)
+![execution_inscription_ko](../tests/cypress/videos/inscription_utilisateur_ko.cy.js.mp4)
+![execution_inscription](../tests/cypress/videos/inscription_utilisateur.cy.js.mp4)
+![execution_recherche](../tests/cypress/videos/recherche_croisiere.cy.js.mp4)
