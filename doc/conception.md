@@ -69,7 +69,7 @@ Vérifiez que les utilisateurs ne peuvent pas se connecter avec succès sur le s
 // Prérequis:
 - Avoir accès à l'internet.
 - Avoir un compte utilisateur existant sur le site.
-- 
+  
 // Résultats attendus:
 Lorsque les identifiants ne sont pas entrés et que le bouton de connexion est cliqué, un message d'erreur approprié doit être affiché.
 L'utilisateur doit rester sur la page de connexion sans être connecté.
